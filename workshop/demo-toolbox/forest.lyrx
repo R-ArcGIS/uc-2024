@@ -1,0 +1,179 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "3.3.0",
+  "build" : 52636,
+  "layers" : [
+    "CIMPATH=map/forested_test2_projectraster.json"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMRasterLayer",
+      "name" : "forested_test2_ProjectRaster",
+      "uRI" : "CIMPATH=map/forested_test2_projectraster.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "forested_test2_ProjectRaster",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/982ef25010d84eec973cd29af2387268.json"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "dataConnection" : {
+        "type" : "CIMStandardDataConnection",
+        "workspaceConnectionString" : "DATABASE=..\\..\\..\\Users\\mar10556\\Documents\\ArcGIS\\Projects\\arcgisbinding\\arcgisbinding.gdb",
+        "workspaceFactory" : "FileGDB",
+        "dataset" : "forested_test2_ProjectRaster",
+        "datasetType" : "esriDTRasterDataset"
+      },
+      "colorizer" : {
+        "type" : "CIMRasterClassifyColorizer",
+        "resamplingType" : "NearestNeighbor",
+        "noDataColor" : {
+          "type" : "CIMRGBColor",
+          "values" : [
+            255,
+            255,
+            255,
+            0
+          ]
+        },
+        "normalizationType" : "Nothing",
+        "classBreaks" : [
+          {
+            "type" : "CIMRasterClassBreak",
+            "upperBound" : 1,
+            "label" : "Forest",
+            "color" : {
+              "type" : "CIMLABColor",
+              "values" : [
+                40.859999999999999,
+                -51.189999999999998,
+                41.390000000000001,
+                50
+              ]
+            }
+          }
+        ],
+        "classificationMethod" : "NaturalBreaks",
+        "colorRamp" : {
+          "type" : "CIMMultipartColorRamp",
+          "colorRamps" : [
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "CIELAB"
+              },
+              "fromColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  40.858330556840926,
+                  -51.194783838484057,
+                  41.388529301802926,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  96.683616491167115,
+                  -20.419171018551619,
+                  87.367929001284963,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "CIELAB"
+              },
+              "fromColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  96.683616491167115,
+                  -20.419171018551619,
+                  87.367929001284963,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  58.272896696105491,
+                  71.874948497344164,
+                  68.376669527215554,
+                  100
+                ]
+              }
+            }
+          ],
+          "weights" : [
+            1,
+            1
+          ]
+        },
+        "field" : "Value",
+        "minimumBreak" : 1,
+        "showInAscendingOrder" : true,
+        "numberFormat" : {
+          "type" : "CIMNumericFormat",
+          "alignmentOption" : "esriAlignLeft",
+          "alignmentWidth" : 12,
+          "roundingOption" : "esriRoundNumberOfDecimals",
+          "roundingValue" : 3,
+          "useSeparator" : true
+        }
+      }
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2.1",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2",
+  "elevationSurfaceLayerDefinitions" : [
+    {
+      "type" : "CIMElevationSurfaceLayer",
+      "name" : "Ground",
+      "uRI" : "CIMPATH=Map/982ef25010d84eec973cd29af2387268.json",
+      "useSourceMetadata" : true,
+      "description" : "Ground",
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : false,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "elevationMode" : "BaseGlobeSurface",
+      "verticalExaggeration" : 1,
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth"
+    }
+  ]
+}
