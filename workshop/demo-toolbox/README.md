@@ -16,6 +16,7 @@ The included forest.lyrx file is used to set the symbology of the output raster 
 
 ## Additional documentation and resources
 
+- [R-ArcGIS Bridge Documentation: Geoprocessing Tools Overview](https://developers.arcgis.com/r-bridge/geoprocessing/overview/)
 - [Create a script tool (Python)](https://pro.arcgis.com/en/pro-app/latest/help/analysis/geoprocessing/basics/create-a-python-script-tool.htm)
 - [Building an R Script Tool](https://esricanada-ce.github.io/r-arcgis-tutorials/4-Building-an-R-Script-Tool.pdf)
 
