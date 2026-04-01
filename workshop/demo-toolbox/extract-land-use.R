@@ -8,7 +8,8 @@ tool_exec <- function(in_params, out_params) {
 
   # Read image service from Living Atlas: Sentinel2 Land Cover
 
-  raster_url <- 'https://env1.arcgis.com/arcgis/rest/services/Sentinel2_10m_LandCover/ImageServer'
+  raster_url <- 'https://ic.imagery1.arcgis.com/arcgis/rest/services/Sentinel2_10m_LandCover/ImageServer'
+    #'https://env1.arcgis.com/arcgis/rest/services/Sentinel2_10m_LandCover/ImageServer'
 
   print('Reading land cover service metadata...')
   arc.progress_label('Reading land cover service metadata...')
